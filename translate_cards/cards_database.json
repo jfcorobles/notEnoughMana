@@ -1,0 +1,529 @@
+{
+  "PP cards - singles ISO-011.png": {
+    "title_es": "FLECHA DE FUEGO",
+    "subtitle_es": "Ignis Sagitta",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 1**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-019.png": {
+    "title_es": "BOLA DE FUEGO",
+    "subtitle_es": "Globus Ignea",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-025.png": {
+    "title_es": "LLUVIA DE METEOROS",
+    "subtitle_es": "Pandemonium Meteorum",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart}.",
+      "Todos los magos sentados junto al objetivo **pierden 1**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-028.png": {
+    "title_es": "ARMAGEDÓN",
+    "subtitle_es": "Finem Ignea Semper",
+    "type": "spell",
+    "body_es": [
+      "Todos los magos (incluido el lanzador) **pierden 3**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-029.png": {
+    "title_es": "IMPLOSIÓN DE MANÁ",
+    "subtitle_es": "Igne Doloris",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart} y **2**{drop}."
+    ]
+  },
+  "PP cards - singles ISO-031.png": {
+    "title_es": "RAYO DE HIELO",
+    "subtitle_es": "Frigus Proiectum",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 1**{heart} y debe **descartar 1 carta** de su mano."
+    ]
+  },
+  "PP cards - singles ISO-037.png": {
+    "title_es": "VENTISCA",
+    "subtitle_es": "Nix Tempestas",
+    "type": "spell",
+    "body_es": [
+      "El objetivo y todos los magos sentados junto al objetivo **pierden 1**{heart}.",
+      "Todos los magos afectados deben **descartar 1 carta** de su mano."
+    ]
+  },
+  "PP cards - singles ISO-040.png": {
+    "title_es": "BÚMERAN DE HIELO",
+    "subtitle_es": "Glacies Hastilum",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 3**{heart}; el lanzador **pierde 1**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-043.png": {
+    "title_es": "TOQUE VAMPÍRICO",
+    "subtitle_es": "Lamia Vita Furtum",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart}; el lanzador **gana 1**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-048.png": {
+    "title_es": "CONGELAR",
+    "subtitle_es": "Nix Carcere",
+    "type": "spell",
+    "body_es": [
+      "El objetivo pierde su siguiente turno."
+    ]
+  },
+  "PP cards - singles ISO-050.png": {
+    "title_es": "AGARRE GÉLIDO",
+    "subtitle_es": "Duratus Supellectilem",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart} y puedes **robar** una carta al azar de su mano."
+    ]
+  },
+  "PP cards - singles ISO-052.png": {
+    "title_es": "RELÁMPAGO",
+    "subtitle_es": "Curva Electrica",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart}.",
+      "El objetivo puede usar otra carta de **Relámpago** para aumentar el daño del hechizo en **1** y **redirigirlo** a otro mago."
+    ]
+  },
+  "PP cards - singles ISO-062.png": {
+    "title_es": "EXPLOSIÓN ELÉCTRICA",
+    "subtitle_es": "Magnum Crepitus Electrica",
+    "type": "spell",
+    "body_es": [
+      "Todos los magos excepto el lanzador **pierden 2**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-065.png": {
+    "title_es": "DESTELLO CEGADOR",
+    "subtitle_es": "Lucidus Ardeo",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart}.",
+      "El objetivo no puede lanzar hechizos ofensivos durante su siguiente turno."
+    ]
+  },
+  "PP cards - singles ISO-067.png": {
+    "title_es": "ARCO ELÉCTRICO",
+    "subtitle_es": "Arcus Tonitrui",
+    "type": "spell",
+    "body_es": [
+      "Dos objetivos seleccionados **pierden 1**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-072.png": {
+    "title_es": "TOQUE PARALIZANTE",
+    "subtitle_es": "Stillabunt Stercore",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **pierde 2**{heart} y debe **descartar 2 cartas** de su mano."
+    ]
+  },
+  "PP cards - singles ISO-074.png": {
+    "title_es": "ESCUDO MÁGICO",
+    "subtitle_es": "Lux Clypeus",
+    "type": "spell",
+    "body_es": [
+      "**Previene** 2 puntos de daño de hechizos."
+    ],
+    "footer_es": "Carta defensiva – puedes usarla en cualquier momento, sobre cualquier mago."
+  },
+  "PP cards - singles ISO-085.png": {
+    "title_es": "ESCUDO DE ESPEJO",
+    "subtitle_es": "Speculum Clypeus",
+    "type": "spell",
+    "body_es": [
+      "**Redirige** hasta 2 puntos de daño de hechizos hacia cualquier mago."
+    ],
+    "footer_es": "Carta defensiva – puedes usarla en cualquier momento, sobre cualquier mago."
+  },
+  "PP cards - singles ISO-090.png": {
+    "title_es": "CONEJO CONGELADO",
+    "subtitle_es": null,
+    "type": "spell",
+    "body_es": [
+      "**Previene** todo el daño de un hechizo seleccionado."
+    ],
+    "footer_es": "Carta defensiva – puedes usarla en cualquier momento, sobre cualquier mago."
+  },
+  "PP cards - singles ISO-091.png": {
+    "title_es": "ÚLTIMO DESEO",
+    "subtitle_es": "Supremum Exitum",
+    "type": "spell",
+    "body_es": [
+      "Si el daño del hechizo de un oponente te mata, infliges la misma cantidad de daño al atacante antes de perder tus puntos de salud.",
+      "Aún así mueres después."
+    ],
+    "footer_es": "Carta defensiva – puedes usarla en cualquier momento."
+  },
+  "PP cards - singles ISO-092.png": {
+    "title_es": "CAPTURA MÁGICA",
+    "subtitle_es": "Sum Malus Furem",
+    "type": "spell",
+    "body_es": [
+      "**Roba** una carta de la parte superior de la pila de descarte."
+    ],
+    "footer_es": "Carta defensiva – puedes usarla en cualquier momento."
+  },
+  "PP cards - singles ISO-095.png": {
+    "title_es": "ANIQUILACIÓN",
+    "subtitle_es": "Postremus Eversio",
+    "type": "spell",
+    "body_es": [
+      "**Descarta** cualquier carta en el juego (incluyendo un hechizo lanzado por un oponente) a la pila de descarte."
+    ],
+    "footer_es": "Carta defensiva – puedes usarla en cualquier momento."
+  },
+  "PP cards - singles ISO-097.png": {
+    "title_es": "CURAR",
+    "subtitle_es": "Magis Salutem",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **gana 1**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-107.png": {
+    "title_es": "CURA MAYOR",
+    "subtitle_es": "Sanus Maximum",
+    "type": "spell",
+    "body_es": [
+      "El objetivo **gana 2**{heart}."
+    ]
+  },
+  "PP cards - singles ISO-111.png": {
+    "title_es": "INTERCAMBIO DE LIBROS",
+    "subtitle_es": "Verto Voluminus",
+    "type": "spell",
+    "body_es": [
+      "**Intercambia** tu mano con la de un mago seleccionado."
+    ]
+  },
+  "PP cards - singles ISO-113.png": {
+    "title_es": "MANO MÁGICA",
+    "subtitle_es": "Volumen Furtum",
+    "type": "spell",
+    "body_es": [
+      "Mira las cartas en la mano de un mago seleccionado y **roba** una de ellas para ti."
+    ]
+  },
+  "PP cards - singles ISO-115.png": {
+    "title_es": "CAMPO DE FUERZA",
+    "subtitle_es": "Viribus Defensionem",
+    "type": "spell",
+    "body_es": [
+      "El objetivo no puede ser afectado por hechizos hasta tu siguiente turno."
+    ]
+  },
+  "PP cards - singles ISO-118.png": {
+    "title_es": "ELIXIR POTENTE",
+    "subtitle_es": "Fortis Suci",
+    "type": "spell",
+    "body_es": [
+      "**Duplica el **{drop} otorgado por tu siguiente poción de maná."
+    ]
+  },
+  "PP cards - singles ISO-122.png": {
+    "title_es": "SALTO ESPACIAL",
+    "subtitle_es": "Volumen Satiata",
+    "type": "spell",
+    "body_es": [
+      "**Descarta** todas las cartas de tu mano y **roba** una mano completa de nuevo."
+    ]
+  },
+  "PP cards - singles ISO-124.png": {
+    "title_es": "MALDICIÓN DE LAS REGLAS",
+    "subtitle_es": "A Szabályok Atok",
+    "type": "curse",
+    "body_es": [
+      "Coloca esta carta frente a ti y establece una regla, por ejemplo: “no decir groserías”.",
+      "A partir de ahora, todo mago que rompa la regla **pierde 1**{drop}.",
+      "La maldición afecta también al lanzador.",
+      "La regla no puede contradecir las reglas del juego."
+    ]
+  },
+  "PP cards - singles ISO-127.png": {
+    "title_es": "MALDICIÓN DEL MAYOR",
+    "subtitle_es": "Mamája Olyan Büdös",
+    "type": "curse",
+    "body_es": [
+      "Todos los magos mayores que el lanzador **pierden 3**{drop}."
+    ]
+  },
+  "PP cards - singles ISO-128.png": {
+    "title_es": "MALDICIÓN DEL MENOR",
+    "subtitle_es": "Menj Vissza Kozóba",
+    "type": "curse",
+    "body_es": [
+      "Todos los magos menores que el lanzador **pierden 3**{drop}."
+    ]
+  },
+  "PP cards - singles ISO-129.png": {
+    "title_es": "MALDICIÓN DE VIGOR",
+    "subtitle_es": "Ragaszkodom Segged Tűt",
+    "type": "curse",
+    "body_es": [
+      "Todos los magos con al menos tantos {heart} como el lanzador **pierden 3**{drop}."
+    ]
+  },
+  "PP cards - singles ISO-130.png": {
+    "title_es": "MALDICIÓN DE LOS PARES",
+    "subtitle_es": "Húsz Kecske Enni",
+    "type": "curse",
+    "body_es": [
+      "Todos los magos nacidos en un mes par **pierden 3**{drop}."
+    ]
+  },
+  "PP cards - singles ISO-131.png": {
+    "title_es": "MALDICIÓN DE LOS IMPARES",
+    "subtitle_es": "Tizenhárom Hálószoba",
+    "type": "curse",
+    "body_es": [
+      "Todos los magos nacidos en un mes impar **pierden 3**{drop}."
+    ]
+  },
+  "PP cards - singles ISO-132.png": {
+    "title_es": "TIARA IGNÍFUGA",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, los hechizos de **fuego** te infligen **1** menos de daño."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-133.png": {
+    "title_es": "BOTAS ACOLCHADAS",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, los hechizos de **hielo** te infligen **1** menos de daño."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-134.png": {
+    "title_es": "CAPA DE FARADAY",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, los hechizos de **electricidad** te infligen **1** menos de daño."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-135.png": {
+    "title_es": "FUEGO SALVAJE",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, tus hechizos de **fuego** infligen **1** de daño adicional."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-136.png": {
+    "title_es": "VIDRIODRAGÓN",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, tus hechizos de **hielo** infligen **1** de daño adicional."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-137.png": {
+    "title_es": "BOBINA DE TESLA",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, tus hechizos de **electricidad** infligen **1** de daño adicional."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-138.png": {
+    "title_es": "LIBRO DE HECHIZOS",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, el límite de tu mano aumenta en **1** carta.",
+      "No puedes tener más de un **Libro de hechizos**."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-141.png": {
+    "title_es": "GORRO MÁGICO",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, puedes descartar el **Gorro** para evitar perder cualquier cantidad de {drop} o {heart} una vez."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-144.png": {
+    "title_es": "ARMADURA RÚNICA",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, otorga inmunidad contra **maldiciones**."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-145.png": {
+    "title_es": "PERGAMINO DE LOS ELEMENTOS",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, puedes usar el **Pergamino de los Elementos** en cualquier momento en reemplazo de cualquier carta requerida por otra.",
+      "Descarta esta carta tras usarla."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-152.png": {
+    "title_es": "GUANTE DE TRANSFORMACIÓN",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, puedes **descartar 1 carta** de tu mano y **robar** una nueva una vez por turno."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-153.png": {
+    "title_es": "ESPEJO DE TWARDOWSKY",
+    "subtitle_es": "Artefacto",
+    "subtitle_is_regular": true,
+    "type": "artifact",
+    "body_es": [
+      "Mientras esté equipada, puedes mirar la carta superior del mazo una vez por turno."
+    ],
+    "footer_es": "Coloca esta carta frente a ti para **equiparla**."
+  },
+  "PP cards - singles ISO-154.png": {
+    "title_es": "VISITA DEL ARCHIMAGO",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Todos los magos **pierden 2**{heart} a menos que beban inmediatamente una poción de maná."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-155.png": {
+    "title_es": "NO HAY SUFICIENTE MANÁ",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Hasta que se robe el siguiente evento, **todo** el daño también obliga a las víctimas a perder la misma cantidad de {drop}."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-156.png": {
+    "title_es": "VASO DE CHUPITO",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Hasta que se robe el siguiente evento, beber una poción de maná otorga **1**{drop} **menos**."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-157.png": {
+    "title_es": "TORMENTA DE FUEGO",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Hasta que se robe el siguiente evento, los hechizos de **fuego** cuestan **1**{drop} **más** e **infligen 1 más de daño**."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-158.png": {
+    "title_es": "TORMENTA DE HIELO",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Hasta que se robe el siguiente evento, los hechizos de **hielo** cuestan **1**{drop} **más** e **infligen 1 más de daño**."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-159.png": {
+    "title_es": "TORMENTA ELÉCTRICA",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Hasta que se robe el siguiente evento, los hechizos de **electricidad** cuestan **1**{drop} **más** e **infligen 1 más de daño**."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-160.png": {
+    "title_es": "FOCO DE MANÁ",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Hasta que se robe el siguiente evento, puedes ignorar el daño recibido y en su lugar perder la misma cantidad de {drop}."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-161.png": {
+    "title_es": "GRAVEDAD ALTERADA",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Hasta que se robe el siguiente evento, el límite de la mano de cada mago **aumenta en 1** carta."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-162.png": {
+    "title_es": "BENDICIÓN",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Todos los magos **ganan 2**{heart}."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-163.png": {
+    "title_es": "DESCARGA DE DISTORSIÓN",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "El mago con la **menor** cantidad de {drop} **pierde 1**{heart}.",
+      "Los demás magos **ganan 1**{heart}."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  },
+  "PP cards - singles ISO-164.png": {
+    "title_es": "TRANSMUTACIÓN DE ELIXIR",
+    "subtitle_es": "Evento",
+    "subtitle_is_regular": true,
+    "type": "event",
+    "body_es": [
+      "Todos los magos pueden ganar **cualquier** cantidad de {heart} gastando **2**{drop} por cada uno."
+    ],
+    "footer_es": "Juégala inmediatamente tras robarla, luego roba una nueva carta."
+  }
+}
