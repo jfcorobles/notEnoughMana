@@ -1,0 +1,19 @@
+{
+  "name": "Not Enough Mana - Contador",
+  "short_name": "NotEnoughMana",
+  "description": "Contador oficial de Vida y Maná para el juego de cartas Not Enough Mana",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#08060c",
+  "theme_color": "#0d0509",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

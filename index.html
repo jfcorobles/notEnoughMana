@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Not Enough Mana - Contador de Vida y Maná</title>
+  <meta name="description" content="Contador oficial y elegante de Puntos de Vida (HP) y Reserva de Maná (MP) para el juego de cartas Not Enough Mana. PWA ligera y offline.">
+  <meta name="theme-color" content="#0d0509">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="NotEnoughMana">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700;800&family=Rajdhani:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow layers -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  
+  <main class="app-container" id="app">
+    <!-- Top Utility Bar -->
+    <header class="top-nav" id="topNav">
+      <div class="brand">
+        <span class="brand-badge">COMPANION</span>
+        <h1 class="brand-title">NOT ENOUGH MANA</h1>
+      </div>
+      
+      <div class="nav-actions">
+        <button type="button" class="nav-btn" id="undoBtn" title="Deshacer última acción" aria-label="Deshacer última acción" disabled>
+          <svg viewBox="0 0 24 24" class="nav-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 10h10a5 5 0 0 1 5 5v2m0 0l-4-4m4 4l4-4M3 10l4-4m-4 4l4 4"/>
+          </svg>
+        </button>
+        <button type="button" class="nav-btn" id="wakeLockBtn" title="Mantener pantalla activa" aria-label="Mantener pantalla activa">
+          <svg viewBox="0 0 24 24" class="nav-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+          </svg>
+        </button>
+        <button type="button" class="nav-btn" id="soundToggleBtn" title="Activar/Silenciar sonido" aria-label="Sonido activado">
+          <svg viewBox="0 0 24 24" class="nav-icon sound-on-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <svg viewBox="0 0 24 24" class="nav-icon sound-off-icon" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+        <button type="button" class="nav-btn" id="rulesBtn" title="Reglas y ayuda" aria-label="Reglas y ayuda">
+          <svg viewBox="0 0 24 24" class="nav-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </button>
+        <button type="button" class="nav-btn" id="resetModalBtn" title="Reiniciar partida" aria-label="Reiniciar partida">
+          <svg viewBox="0 0 24 24" class="nav-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- SECTION: HEALTH POINTS (HP) -->
+    <section class="game-section section-hp" id="hpSection" aria-label="Puntos de Vida">
+      <!-- Section Header -->
+      <div class="section-title-wrap">
+        <div class="section-badge red-badge">
+          <span class="badge-icon">❤️</span>
+          <span class="badge-text">PUNTOS DE VIDA (HP)</span>
+        </div>
+        
+        <!-- 10 Health Pips / Segments -->
+        <div class="hp-pips-container" id="hpPipsContainer" aria-label="Barras de vida restantes: 10 de 10">
+          <span class="hp-pip active" data-index="1"></span>
+          <span class="hp-pip active" data-index="2"></span>
+          <span class="hp-pip active" data-index="3"></span>
+          <span class="hp-pip active" data-index="4"></span>
+          <span class="hp-pip active" data-index="5"></span>
+          <span class="hp-pip active" data-index="6"></span>
+          <span class="hp-pip active" data-index="7"></span>
+          <span class="hp-pip active" data-index="8"></span>
+          <span class="hp-pip active" data-index="9"></span>
+          <span class="hp-pip active" data-index="10"></span>
+        </div>
+      </div>
+
+      <!-- Center Heart Display -->
+      <div class="counter-display heart-display-wrap" id="heartContainer">
+        <div class="heart-shape" id="heartShape">
+          <svg class="heart-svg" viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="heartInnerGlow" cx="50%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#b8163f" stop-opacity="0.85"/>
+                <stop offset="50%" stop-color="#64091d" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#2d030c" stop-opacity="0.95"/>
+              </radialGradient>
+              <filter id="heartNeon" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="8" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <path d="M120 205 C 120 205, 12 140, 12 70 C 12 25, 52 10, 88 10 C 104 10, 115 18, 120 26 C 125 18, 136 10, 152 10 C 188 10, 228 25, 228 70 C 228 140, 120 205, 120 205 Z" 
+                  fill="url(#heartInnerGlow)" 
+                  stroke="#ff2a6d" 
+                  stroke-width="2.5" 
+                  filter="url(#heartNeon)"/>
+          </svg>
+          
+          <div class="counter-text-overlay">
+            <div class="counter-value hp-value" id="hpDisplay">10</div>
+            <div class="counter-max-label">/ 10 MAX</div>
+          </div>
+        </div>
+        
+        <!-- Floating effects container for damage/heal pops -->
+        <div class="effects-overlay" id="hpEffectsOverlay"></div>
+      </div>
+
+      <!-- HP Controls -->
+      <div class="button-row hp-buttons">
+        <button type="button" class="btn-counter btn-hp-minus" id="hpMinusBtn" aria-label="Restar 1 punto de vida">
+          <span class="btn-symbol">−</span>
+          <span class="btn-label">-1 HP</span>
+        </button>
+        <button type="button" class="btn-counter btn-hp-plus" id="hpPlusBtn" aria-label="Sumar 1 punto de vida">
+          <span class="btn-symbol">+</span>
+          <span class="btn-label">+1 HP</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION: MANA POINTS (MP) -->
+    <section class="game-section section-mp" id="mpSection" aria-label="Reserva de Maná">
+      <!-- Section Header -->
+      <div class="section-title-wrap">
+        <div class="section-badge cyan-badge">
+          <span class="badge-icon">💧</span>
+          <span class="badge-text">RESERVA DE MANÁ (MP)</span>
+        </div>
+        <div class="mana-status-label" id="manaStatusLabel">Pozo Vacío (0 MP)</div>
+      </div>
+
+      <!-- Center Droplet Display -->
+      <div class="counter-display droplet-display-wrap" id="dropletContainer">
+        <div class="droplet-shape" id="dropletShape">
+          <svg class="droplet-svg" viewBox="0 0 220 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="dropletInnerGlow" cx="50%" cy="55%" r="60%">
+                <stop offset="0%" stop-color="#00a8cc" stop-opacity="0.85"/>
+                <stop offset="50%" stop-color="#00557a" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#022133" stop-opacity="0.95"/>
+              </radialGradient>
+              <filter id="dropNeon" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="8" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <path d="M110 12 C 110 12, 16 110, 16 160 C 16 205, 58 232, 110 232 C 162 232, 204 205, 204 160 C 204 110, 110 12, 110 12 Z" 
+                  fill="url(#dropletInnerGlow)" 
+                  stroke="#00f0ff" 
+                  stroke-width="2.5" 
+                  filter="url(#dropNeon)"/>
+          </svg>
+          
+          <div class="counter-text-overlay">
+            <div class="counter-value mp-value" id="mpDisplay">0</div>
+            <div class="counter-max-label cyan-sub">MP DISPONIBLE</div>
+          </div>
+        </div>
+        
+        <!-- Floating effects container for mana pops -->
+        <div class="effects-overlay" id="mpEffectsOverlay"></div>
+      </div>
+
+      <!-- MP Controls -->
+      <div class="mp-controls-wrap">
+        <!-- Prominent Potion / Shot Button (Rule Base +3 MP) -->
+        <button type="button" class="btn-potion" id="potionBtn" aria-label="Beber poción o shot para obtener 3 puntos de maná">
+          <div class="btn-potion-content">
+            <svg class="potion-svg-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 22h8"/>
+              <path d="M12 15v7"/>
+              <path d="M5 3h14l-7 12-7-12z"/>
+              <line x1="7" y1="6.5" x2="17" y2="6.5" stroke-width="1.6"/>
+              <circle cx="12" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+            <span class="potion-title">+3 POCIÓN / SHOT</span>
+          </div>
+          <span class="potion-badge">REGLA BASE</span>
+        </button>
+
+        <!-- Secondary +/- 1 Mana Buttons -->
+        <div class="button-row mp-secondary-buttons">
+          <button type="button" class="btn-counter btn-mp-minus" id="mpMinusBtn" aria-label="Gastar 1 punto de maná">
+            <span class="btn-symbol cyan-sym">−</span>
+            <span class="btn-label">-1 Maná</span>
+          </button>
+          <button type="button" class="btn-counter btn-mp-plus" id="mpPlusBtn" aria-label="Sumar 1 punto de maná">
+            <span class="btn-symbol cyan-sym">+</span>
+            <span class="btn-label">+1 Maná</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Subtle Shortcut Hints Footer -->
+      <footer class="app-footer-hint">
+        <span>Atajos: [1] -1 HP · [2] +1 HP · [Espacio] +3 MP · [A] -1 MP · [S] +1 MP</span>
+      </footer>
+    </section>
+  </main>
+
+  <!-- MODAL: REINICIAR PARTIDA -->
+  <div class="modal-backdrop" id="resetModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-icon-header">🔄</div>
+      <h2 class="modal-title">¿Reiniciar Partida?</h2>
+      <p class="modal-desc">Restablecerás los valores iniciales: <strong>10 HP</strong> y <strong>0 MP</strong>.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn-modal btn-cancel" id="cancelResetBtn">Cancelar</button>
+        <button type="button" class="btn-modal btn-confirm-reset" id="confirmResetBtn">Reiniciar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: REGLAS DEL JUEGO -->
+  <div class="modal-backdrop" id="rulesModal" aria-hidden="true">
+    <div class="modal-card modal-rules">
+      <div class="rules-header">
+        <h2 class="modal-title">Reglas Rápidas</h2>
+        <button type="button" class="modal-close-btn" id="closeRulesBtn" aria-label="Cerrar reglas">&times;</button>
+      </div>
+      <div class="rules-body">
+        <div class="rule-item">
+          <span class="rule-badge red">10 HP</span>
+          <p>Comienzas con <strong>10 Puntos de Vida</strong>. Cada daño recibido resta HP. Si llegas a 0, ¡quedas eliminado!</p>
+        </div>
+        <div class="rule-item">
+          <span class="rule-badge cyan">+3 MP</span>
+          <p><strong>Poción / Shot:</strong> Inicias en 0 MP. Cuando bebas una poción (shot o sorbo según tus reglas de mesa), ganas inmediatamente <strong>+3 de Maná</strong>.</p>
+        </div>
+        <div class="rule-item">
+          <span class="rule-badge blue">Gastar Maná</span>
+          <p>Lanza hechizos y activa habilidades de cartas gastando el maná acumulado (-1 Maná por cada coste).</p>
+        </div>
+        <div class="rule-item">
+          <span class="rule-badge purple">PWA Offline</span>
+          <p>Instala la app en tu móvil desde el navegador (Agregar a Pantalla de Inicio) y úsala sin conexión a internet.</p>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn-modal btn-confirm-reset" id="gotItRulesBtn">¡Entendido!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERLAY: DERROTA (0 HP) -->
+  <div class="defeat-overlay" id="defeatOverlay" aria-hidden="true">
+    <div class="defeat-card">
+      <div class="skull-icon">💀</div>
+      <h2 class="defeat-title">¡HAS CAÍDO EN COMBATE!</h2>
+      <p class="defeat-subtitle">Tus puntos de vida han llegado a cero.</p>
+      <div class="defeat-actions">
+        <button type="button" class="btn-revive" id="reviveBtn">
+          <span>💖 Revivir con 1 HP</span>
+        </button>
+        <button type="button" class="btn-new-game" id="defeatNewGameBtn">
+          <span>🔄 Nueva Partida (10 HP)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
